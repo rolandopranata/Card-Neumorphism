@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(231, 231, 231);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  background: rgb(238, 238, 238);
+  /* For create Neumorphism Effect */
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+    2px 2px 5px rgba(104, 104, 104, 0.5);
+  /* For create Neumorphism Effect */
+  border-radius: 10px;
+  padding: 1.5em 2em;
+}
+
+.card .card-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-nav .nav-item {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.card-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-profile .img {
+  max-width: 120px;
+  clip-path: circle();
+}
+
+.card-profile .name {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-top: -15px;
+}
+
+.card-profile .job {
+  font-size: 1em;
+  font-weight: 500;
+  color: rgb(165, 165, 165);
+}
+
+.card-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+}
+
+.card-socials .social {
+  font-size: 1.5em;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 50%;
+  /* For create Neumorphism Effect */
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+    2px 2px 5px rgba(104, 104, 104, 0.5);
+  /* For create Neumorphism Effect */
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-socials .social:hover {
+  /* For create Neumorphism Effect when button clicked*/
+  box-shadow: 1px 1px 2px rgb(255, 255, 255), -1px -1px 2px rgb(255, 255, 255),
+    inset -3px 3px 6px rgba(203, 203, 203, 0.2),
+    inset 3px -3px 6px rgba(203, 203, 203, 0.2),
+    inset -3px -3px 6px rgba(225, 225, 225, 0.9),
+    inset 3px 3px 8px rgba(203, 203, 203, 0.9);
+  /* For create Neumorphism Effect when button clicked*/
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-buttons .btn {
+  display: inline-block;
+  margin: 20px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+  border-radius: 5px;
+  /* For create Neumorphism Effect*/
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+    2px 2px 5px rgba(104, 104, 104, 0.5);
+  padding: 10px 20px;
+  transition: 0.3s;
+  /* For create Neumorphism Effect*/
+}
+
+.card-buttons .btn:hover {
+  /* For create Neumorphism Effect when button clicked*/
+  box-shadow: 1px 1px 2px rgb(255, 255, 255), -1px -1px 2px rgb(255, 255, 255),
+    inset -3px 3px 6px rgba(203, 203, 203, 0.2),
+    inset 3px -3px 6px rgba(203, 203, 203, 0.2),
+    inset -3px -3px 6px rgba(225, 225, 225, 0.9),
+    inset 3px 3px 8px rgba(203, 203, 203, 0.9);
+  /* For create Neumorphism Effect when button clicked*/
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+.card-footer .row .icon-footer {
+  font-size: 1.5em;
+  margin: 0 5px 0 0;
+}
